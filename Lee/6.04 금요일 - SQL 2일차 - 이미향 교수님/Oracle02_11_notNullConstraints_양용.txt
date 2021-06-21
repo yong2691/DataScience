@@ -1,0 +1,34 @@
+* not null을 넣었을때는 안된다 예시
+
+SQL> create table dept
+  2  (deptno number(3) not null, dname varchar2(10), loc varchar2(20));
+
+Table created.
+
+SQL> desc dept;
+ Name
+           Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ DEPTNO
+           NOT NULL NUMBER(3)
+ DNAME
+                    VARCHAR2(10)
+ LOC
+                    VARCHAR2(20)
+
+SQL> insert into dept values('총무부,'서울');
+ERROR:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> insert into dept(dname, loc) values('총무부','서울')
+  2
+SQL> select * from dept;
+
+no rows selected
+
+SQL> insert into dept(dname, loc) values('총무부','서울');
+insert into dept(dname, loc) values('총무부','서울')
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("SCOTT"."DEPT"."DEPTNO")

@@ -1,0 +1,37 @@
+
+## SQL GROUP BY Statement
+
+groupby(COUNT(), MAX(), MIN(), SUM(), AVG())
+
+실습 ] sawon 테이블에서 전직원의
+	급여 사원수, 평균, 최고급여, 최저급여, 급여의 합
+select
+count(sapay) 사원수,
+max(sapay) 최고급여,
+min(sapay) 최저급여,
+sum(sapay) 급여합,
+avg(sapay) 급여평균
+from sawon;
+
+select
+count(sapay) as 사원수,
+max(sapay) as 최고급여,
+min(sapay) as 최저급여,
+sum(sapay) as 급여합,
+avg(sapay) as 급여평균
+from sawon;
+
+select
+count(sapay) as "사원수",
+max(sapay) as "최고급여",
+min(sapay) as "최저급여",
+sum(sapay) as "급여합",
+avg(sapay) as "급여평균"
+from sawon;
+
+SQL> select count(sapay) 사원수, max(sapay) 최고급여, min(sapay) 최저급여, sum(sapay) 급여합, avg(sapay) 급여평균
+  2  from sawon;
+
+    사원수   최고급여   최저급여     급여합   급여평균
+---------- ---------- ---------- ---------- ----------
+        20       5000        400      48318     2415.9

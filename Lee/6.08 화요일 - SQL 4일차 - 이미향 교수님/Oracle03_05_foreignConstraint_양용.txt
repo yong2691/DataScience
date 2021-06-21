@@ -1,0 +1,30 @@
+drop table dept;
+create table dept
+(deptno number(3),
+dname varchar2(10),
+loc varchar2(10),
+constraint dept_deptno_pk primary key (deptno)
+);
+
+insert into dept values (10, '총무부', '서울');
+insert into dept values (20, '영업부', '대전');
+
+drop table sawon;
+create table sawon
+(sabun number(3),
+saname varchar2(10),
+deptno number(3),
+sajob varchar2(10),
+sapay number(10),
+sahire date,
+sasex varchar2(6),
+samgr number(3),
+constraint sawon_deptno_fk foreign key (deptno) references dept (deptno)
+);
+
+insert into sawon values (2, '한국남', 20, '부장', 3000, '1988/11/01', '남자', 1);
+
+
+
+========================================================
+

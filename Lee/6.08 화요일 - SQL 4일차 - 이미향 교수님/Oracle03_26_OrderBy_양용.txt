@@ -1,0 +1,10 @@
+ORDER BY Column1, column2, ... ASC|desc;
+디폴트는 ascending이다.
+
+select sabun, saname
+from sawon
+order by sabun;
+
+select sabun, saname
+from sawon
+order by sabun desc;

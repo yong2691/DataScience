@@ -1,0 +1,25 @@
+1. drop table dept; 하면 에러 난다. 왜냐면, pk있어서 이것에 종속되는 fk가 있기 때문
+2. drop table gogek;
+drop table sawon;
+drop table dept;
+를 순서대로 하면, 에러가 나지 않는다.
+
+결과=============================================
+
+SQL>
+SQL> drop table dept;
+drop table dept
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys
+
+SQL> drop table gogek;
+Table dropped.
+SQL> drop table sawon;
+Table dropped.
+SQL> drop table dept;
+Table dropped.
+SQL> select * from tab;
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+MEMBERT01                                                    TABLE

@@ -1,0 +1,50 @@
+SQL> create table dept
+  2  (deptno number(3),
+  3  dname varchar2(10),
+  4  loc varchar2(10),
+  5  constraint dept_deptno_pk primary key (deptno));           #pk 제약조건(unique + notnull)
+
+Table created.
+
+SQL> select * from user_constraints;
+
+OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONSTRAINT_NAME                                              CO TABLE_NAME
+------------------------------------------------------------ -- ------------------------------------------------------------
+SEARCH_CONDITION
+--------------------------------------------------------------------------------
+R_OWNER
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+R_CONSTRAINT_NAME                                            DELETE_RULE        STATUS           DEFERRABLE                   DEFERRED           VALIDATED                  GENERATED
+------------------------------------------------------------ ------------------ ---------------- ---------------------------- ------------------ -------------------------- ----------------------------
+BAD    RELY     LAST_CHA INDEX_OWNER                                                  INDEX_NAME                                                   INVALID        VIEW_RELATED
+------ -------- -------- ------------------------------------------------------------ ------------------------------------------------------------ -------------- ----------------------------
+SCOTT
+DEPT_DEPTNO_PK                                               P  DEPT
+
+
+                                                                                ENABLED          NOT DEFERRABLE               IMMEDIATE          VALIDATED                  USER NAME
+                21/06/08 SCOTT                                                        DEPT_DEPTNO_PK
+
+SQL> select * from dept;
+
+    DEPTNO DNAME                LOC
+---------- -------------------- --------------------
+        10 총무부               서울
+        20 영업부               대전
+        30 전산부               부산
+        40 관리부               광주
+
+SQL> insert into dept (dname) values('총무부');
+insert into dept (dname) values('총무부')
+*
+ERROR at line 1:
+ORA-01400: cannot insert NULL into ("SCOTT"."DEPT"."DEPTNO")
+
+
+SQL> insert into dept(deptno) values(10);
+insert into dept(deptno) values(10)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SCOTT.DEPT_DEPTNO_PK) violated

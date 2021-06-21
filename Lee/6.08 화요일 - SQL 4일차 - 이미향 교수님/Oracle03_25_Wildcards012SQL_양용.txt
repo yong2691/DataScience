@@ -1,0 +1,36 @@
+% : 임의의 모든문자
+_ : 한문자
+
+select saname
+from sawon
+where saname like'%만';
+
+
+연습 ] 사원테이블에서 이씨인 모든 사원 출력
+select saname from sawon
+where saname like '이%'
+
+실습1 ] sawon 테이블에서 김씨인 모든 사원 출력
+
+select saname from sawon
+where saname like '김%';
+
+실습2 ] sawon 테이블에서 두번째 글자가 '미'인 모든 사원 출력
+select saname from sawon
+where saname like '_미%';
+
+실습3 ] gogek 테이블에서 이름이 두 글자인 고객 출력
+select saname from sawon
+where saname like '__';
+
+실습4 ] sawon 테이블에서 '이' 자가 들어가는 모든 사원 출력
+select saname from sawon
+where saname like '%이%';
+
+실습5 ] sawon 테이블에서 이름에서 마지막 글자가 '만' 인 리스트 출력
+select saname from sawon
+where saname like '__만';
+
+
+
+
