@@ -1,0 +1,14 @@
+SQL> select * from tab;
+
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+MEMBERT01                                                    TABLE
+
+=> 테이블 리스트 확인 MEMBERT01이 있는 것을 확인했다.
+
+
+SQL> drop table membert01;
+Table dropped. =>memberT01 테이블 지워라
+
+SQL> select * from tab;
+no rows selected => 테이블 지운다음에 확인했더니 아무것도 없다.

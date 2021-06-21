@@ -1,0 +1,29 @@
+
+
+
+* memberT01 테이블에 들어있는 모든 행값을 가져와봐라. 했는데
+SQL> select * from memberT01;
+no rows selected => 아무것도 내용이 입력된게 없어서 없다!
+
+* membert01에다가 값을 넣고 싶다면? 
+insert into membert01 (mem_name, mem_id, mem_pwd)
+values ('오렌지', 'orange','1234');
+
+* 값이 들어간것을 확인하고 싶으면?
+select * from membert01;
+
+SQL> insert into membert01 (mem_name, mem_id, mem_pwd)
+2 values ('오렌지', 'orange','1234');
+
+1 row created. => 1행이 생성이 되었다.
+
+들어갔는지 리스트를 출력해봐라.
+
+SQL> select * from membert01;
+
+MEM_NAME                                 MEM_ID                                   MEM_PWD
+           MEM_EMAIL
+---------------------------------------- ---------------------------------------- ---------------------------------------- ------------------------------------------------------------
+MEM_PHONE                                MEM_ADDR
+---------------------------------------- ------------------------------------------------------------
+오렌지                                   orange                                   1234

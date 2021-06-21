@@ -1,0 +1,36 @@
+SQL> create table membert01
+  2  (mem_name varchar2(20),
+  3  mem_id varchar2(20),
+  4  mem_pwd varchar2(20),
+  5  mem_email varchar2(30),
+  6  mem_phone varchar2(20),
+  7  mem_addr varchar2(30));
+
+Table created.
+
+SQL> select * from membert01;
+
+no rows selected
+
+insert into memberT01
+values('오렌지','orange','1234','orange@test.com','044','홍익대학교');
+
+1 row created.
+
+SQL> select * from membert01;
+
+MEM_NAME                                 MEM_ID                                   MEM_PWD
+           MEM_EMAIL
+---------------------------------------- ---------------------------------------- ---------------------------------------- ------------------------------------------------------------
+MEM_PHONE                                MEM_ADDR
+---------------------------------------- ------------------------------------------------------------
+오렌지                                   orange                                   1234
+           orange@test.com
+044                                      홍익대학교
+
+
+
+
+insert into memberT01 values('오렌지1','orange','1234','orange@test.com','044','홍익대학교');
+insert into memberT01 values('오렌지2','orange','1234','orange@test.com','044','홍익대학교');
+insert into memberT01 values('오렌지3','orange','1234','orange@test.com','044','홍익대학교');

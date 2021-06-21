@@ -1,0 +1,36 @@
+SQL> show user
+USER is "HR"
+SQL> conn /as sysdba
+Connected.
+SQL> show user
+USER is "SYS"
+SQL> create user angel identified by angel;
+
+User created.
+
+만들었는지 확인해 보려면, 
+
+SQL> select username
+  2  from all_users;
+
+USERNAME
+------------------------------------------------------------
+XS$NULL
+ANGEL
+APEX_040000
+APEX_PUBLIC_USER
+FLOWS_FILES
+HR
+MDSYS
+ANONYMOUS
+XDB
+CTXSYS
+APPQOSSYS
+DBSNMP
+ORACLE_OCM
+DIP
+OUTLN
+SYSTEM
+SYS
+
+17 rows selected.
