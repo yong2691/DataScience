@@ -1,0 +1,20 @@
+<지금부터는 ipython 사용>
+
+<함수 만들기>
+def message() :
+	print("Hello Pandas")
+라고 함수를 define 해놓으면,
+이후 message 라고 치면 Hello Pandas가 출력 된다.
+
+즉, 함수는 빌트인 된걸 쓸수도있고 내가 만들어 쓸수도 있다.
+1. Built-in 함수 써도 되고
+2. 내가 만들어 써도 되고
+
+<만든 함수 목록 확인>
+%who
+
+<내가 만든 특정한 함수가 뭔지 확인할 때>
+message? 라고 치면 확인 된다.
+
+<함수 지우기>
+del message 하면 지워진다.
