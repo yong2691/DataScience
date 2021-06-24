@@ -61,27 +61,8 @@
 
 06.18 (금) : 데이터 분석
 
-06.21 (월) : 데이터 분석
+06.21 (월) : 데이터 분석 - 네이버시리즈TOP100 크롤링 및 시각화
 
-06.22 (화) : 데이터 분석
-
-
+06.22 (화) : 데이터 분석 - 타슈 크롤링 및 시각화 / 세종시 어울링 cctv 가로등 크롤링 및 시각화 /
 
 
-
-
-
-
-공공 데이터 출처
-
-  공공 데이터 포털 : https://www.data.go.kr/
-  
-  미국 공공 데이터 포털 : https://www.data.gov/
-  
-  기상 자료 개방 포털 : https://data.kma.go.kr/cmmn/main.do
-  
-  고속도로 공공 데이터 포털 : http://data.ex.co.kr/
-  
-  티머니 대중교통 통계 자료 : https://pay.tmoney.co.kr/ncs/pct/ugd/ReadUgdMainGd.dev
-  
-  캐글 : https://www.kaggle.com/
