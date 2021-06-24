@@ -1,8 +1,0 @@
-
-문제00 ] sawon 테이블중 사원이 관리하고 있는 고객 명단 확인
-
-결과 ] 사원번호 사원명 고객명 고객전화
-
-select sabun 사원번호, saname 사원명, goname 고객명, gotel 고객전화
-from sawon, gogek
-where sabun = godam;

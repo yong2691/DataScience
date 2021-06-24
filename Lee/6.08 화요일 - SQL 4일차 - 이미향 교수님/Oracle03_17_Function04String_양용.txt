@@ -1,6 +1,0 @@
-CONCAT : 문자열합 출력
-
-select CONcat('Nice','Day') from dual;
-select CONcat('Nice' , 'Day' , '!!' ) from dual;         #ERROR - Oracle에서는 3개 이상은 연결이 안된다.
-select 'Nice' || 'Day' || '~!!' as concat from dual;      #그래서 파이프기호 || 두개를 넣어주면 3개 이상도 연결 가능하다.
-
